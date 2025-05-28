@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Cart from './Cart';
 
 export default function Navbar() {
   return (
@@ -14,7 +15,7 @@ export default function Navbar() {
               />
             </Link>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center space-x-4">
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               <Link
                 to="/products"
@@ -29,6 +30,7 @@ export default function Navbar() {
                 Sign In
               </Link>
             </div>
+            <Cart />
           </div>
         </div>
       </div>
